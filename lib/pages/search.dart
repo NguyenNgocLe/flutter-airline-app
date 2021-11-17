@@ -163,12 +163,16 @@ class Search extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18),
                         ),
                         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 15),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        child: Wrap(
                           children: [
-                            Text('Discount\nfor survey', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white),),
-                            Gap(10),
-                            Text('Take the survey about our services and get a discount', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.w500, color: Colors.white.withOpacity(0.9), fontSize: 18),),
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Text('Discount\nfor survey', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white),),
+                                Gap(10),
+                                Text('Take the survey about our services and get a discount', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.w500, color: Colors.white.withOpacity(0.9), fontSize: 18),),
+                              ],
+                            ),
                           ],
                         ),
                       ),

@@ -115,14 +115,16 @@ class Profile extends StatelessWidget {
                       maxRadius: 25,
                     ),
                     Gap(20),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.start,
-                      children: [
-                        Text('You\'ve got a new award', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center,),
-                        Gap(2),
-                        Text('You have 150 flights in a year', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: Colors.white.withOpacity(0.9)), textAlign: TextAlign.center,),
-                      ],
+                    Flexible(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Text('You\'ve got a new award', style: Styles.headline2Style.copyWith(fontWeight: FontWeight.bold, color: Colors.white), textAlign: TextAlign.center,),
+                          Gap(2),
+                          FittedBox(child: Text('You have 150 flights in a year', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 16, color: Colors.white.withOpacity(0.9)), textAlign: TextAlign.center,)),
+                        ],
+                      ),
                     ),
                   ],
                 ),

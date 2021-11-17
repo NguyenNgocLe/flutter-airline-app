@@ -84,7 +84,7 @@ class TicketView extends StatelessWidget{
                     children: <Widget>[
                       SizedBox(width:100,child: Text('New-York', style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white),)),
                       Text('8H 30M', style: isOrange == null ? Styles.headline3Style.copyWith(fontWeight: FontWeight.bold) : Styles.subtitle1Style.copyWith(color: Colors.white, fontWeight: FontWeight.bold),),
-                      SizedBox(width:100,child: Text('London',textAlign: TextAlign.end, style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white),)),
+                      Flexible(child: SizedBox(width:100,child: Text('London',textAlign: TextAlign.end, style: isOrange == null ? Styles.subtitle1Style : Styles.subtitle1Style.copyWith(color: Colors.white),))),
                     ],
                   ),
                 ],
